@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+:root  {
+    --main-color: #00b39b;
+}
+.container {
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+header nav .logo img {
+    height: 35px;
+    max-width: 100%;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+header nav ul a {
+    text-decoration: none;
+    color: #ababab;
+    margin-left: 20px;
+    font-size: 1.1em;
+    transition: all ease-in-out .4s;
+    font-weight: 500;
+}
+.selected {
+    color: var(--main-color);
+}
+header nav ul a:hover {
+    color: var(--main-color);
+}
+/* End of header */
+.healthcare-experience {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.healthcare-experience .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.healthcare-experience .icon img {
+    height: 45px;
+}
+.healthcare-experience h1 {
+    font-weight: 300;
+    color: var(--main-color);
+    letter-spacing: 1px;
+    font-size: 2.1em;
+    margin: 25px 0;
+}
+.healthcare-experience .paragraphs {
+    display: flex;
+    justify-content: space-between;
+}
+.healthcare-experience .paragraphs p {
+    max-width: 45%;
+    line-height: 2;
+}
+/* End of healthcare-experience section */
+.services .cards {
+    display: flex;
+    justify-content: space-between;
+}
+.services .cards .card-body {
+    background-color: #00ccb1;
+    border-radius: 8px;
+    padding: 40px;
+    max-width: 32%;
+}
+.services .cards .c-blue {
+    background-color: #3d83df;;
+}
+.services .cards .c-black {
+    background-color: #1b2734;;
+}
+.services .cards .card-body .texts svg {
+    color: #fff;
+}
+.services .cards .card-body .texts h4 {
+    color: #fff;
+    font-weight: 500;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.services .cards .card-body .texts p {
+    color: #fff;
+    font-size: 1.4em;
+    line-height: 1.5;
+}
+.services .cards .card-body select {
+    border: none;
+    outline: none;
+    background: none;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    cursor: pointer;
+    font-size: 1.3em;
+    margin-top: 65px;
+    font-weight: 500;
+}
+.services .cards .card-body select option {
+    color: #000;
+}
