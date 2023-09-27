@@ -119,3 +119,191 @@ header nav ul a:hover {
 .services .cards .card-body select option {
     color: #000;
 }
+.company-brands {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0;
+    padding: 0 30px;
+}
+.company-brands .text {
+    max-width: 50%;
+}
+.company-brands .text {
+    color: var(--main-color);
+    font-size: 1.8em;
+    font-weight: 300;
+    line-height: 1.7;
+}
+.company-brands .icons {
+    max-width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    justify-content: flex-end;
+}
+.company-brands .icons img {
+    width: 6rem;
+}
+/* End of services section */
+.about-platform {
+    padding-top: 90px;
+    background-color: #d0faf4;
+}
+.about-platform .about {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.about-platform .about .texts-img {
+    max-width: 50%;
+    flex: 0 0 auto;
+}
+.about-platform .about .texts-img h1 {
+    color: var(--main-color);
+    font-weight: 300;
+    font-size: 2.1em;
+    margin-bottom: 40px;
+}
+.about-platform .about .texts-img p{
+    color: #747474;
+}
+.about-platform .about .texts-img img {
+    margin-top: 70px;
+    position: absolute;
+    bottom: 0;
+}
+.about-platform .about .achievements {
+    max-width: 50%;
+    flex: 0 0 auto;
+    display: flex;
+    margin-left: 60px;
+    margin-bottom: 40px;
+}
+.about-platform .about .achievements .first-col,.second-col {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+.about-platform .about .achievements .first-col {
+    margin-top: 30px;
+}
+.about-platform .about .achievements .card {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 35px 25px;
+    width: 85%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about-platform .about .achievements .card svg {
+    color: var(--main-color);
+}
+.about-platform .about .achievements .card h4 {
+    color: var(--main-color);
+    font-weight: 300;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 25px 0;
+}
+.about-platform .about .achievements .card p {
+    text-align: center;
+}
+/* End of about-platform section */
+.cities {
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+.cities .texts {
+    text-align: center;
+}
+.cities .texts h1 {
+    color: var(--main-color);
+    font-weight: 300;
+    font-size: 1.9em;
+    margin-bottom: 35px;
+}
+.cities .texts p {
+    color: #747474;
+}
+.cities .photos {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 22% 22% 22% 22%;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 150px;
+}
+.cities .photos .photo-card {
+    background-color: #fff;
+    transition: all ease-in-out .4s;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.cities .photos .photo-card:hover {
+    box-shadow: 1px 0px 22px -6px rgba(0,0,0,0.61);
+    -webkit-box-shadow: 1px 0px 22px -6px rgba(0,0,0,0.61);
+    -moz-box-shadow: 1px 0px 22px -6px rgba(0,0,0,0.61);
+}
+.cities .photos .photo-card img {
+    object-fit: cover;
+    width: 100%;
+}
+.cities .photos .photo-card .btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+    padding: 10px;
+}
+.cities .photos .photo-card .btn button {
+    background-color: #3d83df;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 12px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+/* End of the main and start the Footer */
+footer {
+    padding: 20px;
+}
+footer .footer-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+footer .footer-btn h1 {
+    font-weight: 300;
+    text-align: center;
+}
+footer .footer-btn button {
+    background-color: #3d83df;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 12px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 20px auto;
+    font-size: 1em;
+}
+footer p {
+    color: #747474;
+    font-size: 13px;
+    text-align: center;
+    line-height: 3;
+}
+footer a{
+    text-decoration: none;
+    color: #3d83df;
+}
