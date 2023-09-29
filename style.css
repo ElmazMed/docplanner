@@ -123,6 +123,7 @@ header nav ul a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     margin: 50px 0;
     padding: 0 30px;
 }
@@ -179,6 +180,7 @@ header nav ul a:hover {
     display: flex;
     margin-left: 60px;
     margin-bottom: 40px;
+    z-index: 1;
 }
 .about-platform .about .achievements .first-col,.second-col {
     max-width: 50%;
@@ -258,6 +260,7 @@ header nav ul a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     margin-top: 25px;
     padding: 10px;
 }
@@ -306,4 +309,127 @@ footer p {
 footer a{
     text-decoration: none;
     color: #3d83df;
+}
+
+/* Start of media queries */
+
+@media (min-width: 576px) and (max-width: 992px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: end;
+        gap: 5px;
+    }
+    header nav .logo img {
+        height: 22px;
+        max-width: 100%;
+    }
+    .healthcare-experience h1 {
+        text-align: center;
+    }
+    .healthcare-experience .paragraphs p {
+        max-width: 40%;
+        font-size: 13px;
+    }
+    .services .cards {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .services .cards .card-body {
+        max-width: 90%;
+        margin-bottom: 20px;
+    }
+    .company-brands {
+        justify-content: center;
+    }
+    .company-brands .icons {
+        max-width: 100%;
+        margin-top: 30px;
+        gap: 2rem;
+        justify-content: center;
+    }
+    .company-brands .icons img {
+        width: 3.8rem;
+    }
+    .company-brands .text p {
+        text-align: center;
+        font-size: 21px;
+    }
+    .company-brands .text br {
+        display: none;
+    }
+    .about-platform .about {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .about-platform .about .texts-img {
+        max-width: 100%;
+        text-align: center;
+    }
+    .about-platform .about .texts-img img {
+        display: none;
+    }
+    .about-platform .about .achievements {
+        max-width: 100%;
+        justify-content: center;
+        margin-left: 0;
+        margin-top: 20px
+    }
+    .about-platform .about .achievements .first-col, .second-col {
+        max-width: 100%;
+        margin: 8px;
+        gap: 1rem;
+    }
+    .about-platform .about .achievements .card {
+        width: 190px;
+        height: 250px;
+        padding: 26px 15px;
+    }
+    .about-platform .about .achievements .card h4 {
+        font-size: 17px;
+        margin: 25px 0;
+    }
+    .about-platform .about .achievements .card p {
+        font-size: 11px;
+    }
+    .cities .texts h1 {
+        font-size: 1.5em;
+    }
+    .cities .texts p {
+        font-size: 15px;
+        line-height: 2;
+        text-align: justify;
+    }
+    .cities .photos {
+        grid-template-columns: 55% 55%;
+        grid-template-rows: 18% 18% 18% 18% 18%;
+        gap: 3rem;
+        margin-top: 95px;
+        margin-bottom: 70px;
+    }
+    .cities .photos .photo-card .btn {
+        align-items: normal;
+        flex-direction: column;
+    }
+    .cities .photos .photo-card .btn span {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    footer p {
+        font-size: 10px;
+    }
+}
+
+
+@media (min-width: 768px) {
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
 }
